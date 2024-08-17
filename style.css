@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06, #004aad); /* Fondo degradado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    color: #333; /* Color del texto dentro del contenedor */
+}
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+    color: #ff5733;
+    text-shadow: 2px 2px 4px #333;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #f0e130, #ff6b6b);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#output-text {
+    height: 100px;
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+}
