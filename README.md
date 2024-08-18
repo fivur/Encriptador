@@ -1,4 +1,4 @@
 <h1>Encriptador</h1>
+![IMAGEN DEL PROYECTO](img/IMAGENE DEL ENCRIPTADOR.png)
 
-!(img/IMAGENE DEL ENCRIPTADOR.png)
 
