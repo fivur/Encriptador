@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
     <div class="container">
         <h1>Encriptador de Texto</h1>
         <textarea id="input-text" placeholder="Introduce el texto aquí..."></textarea>
+        <p id="error-message" class="hidden">No se aceptan mayúsculas ni caracteres especiales.</p> 
+    
+    
+
         <div class="buttons">
             <button onclick="encriptar()">Encriptar</button>
             <button onclick="desencriptar()">Desencriptar</button>
         </div>
+        <div>
+            <img src="/img/Logo.png" alt="Logo" class="logo">
+        </div>
+        
+
+        <div>
+            <img src="/img/Muñeco.png" alt="muñeco" class="muñeco" width="200" height="150">
+        </div>
+
         <textarea id="output-text" placeholder="Resultado..." readonly></textarea>
         <button onclick="copiarTexto()">Copiar</button>
     </div>
-
     <footer>
-        <p>Desarrollado por Faiver Clavijo</p>
+        <p>Desarrollado por Faiver Clavijo - 2024 - Colombia
+        </p>
     </footer>
 
 

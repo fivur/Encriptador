@@ -1,22 +1,40 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f06, #004aad); /* Fondo degradado */
+    background: linear-gradient(135deg, rgb(243, 240, 240), #041124); /* Fondo degradado */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 150vh;
     color: white;
 }
 
+
+.logo {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    opacity:1;
+}
+
+.muneco {
+    position: relative;
+    width: 300px;
+    height: 304px;
+    top: 283px;
+    opacity: 3; /* Haz visible cambiando a 1 */
+}
+
+
 .container {
     background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente */
-    padding: 20px;
-    border-radius: 8px;
+    padding: 60px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 400px;
     text-align: center;
     color: #333; /* Color del texto dentro del contenedor */
 }
@@ -24,7 +42,7 @@ body {
 h1 {
     font-family: 'Arial Black', sans-serif;
     font-size: 32px;
-    color: #ff5733;
+    color: #f3501f;
     text-shadow: 2px 2px 4px #333;
     margin-bottom: 20px;
 }
@@ -34,7 +52,7 @@ textarea {
     height: 100px;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #181717;
     border-radius: 4px;
     resize: none;
     font-size: 14px;
@@ -52,11 +70,11 @@ button {
     border: none;
     border-radius: 8px;
     background: linear-gradient(45deg, #ff6b6b, #f0e130);
-    color: white;
-    font-size: 16px;
+    color: rgb(255, 252, 252);
+    font-size: 18px;
     cursor: pointer;
     transition: transform 0.3s, background 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(20, 20, 20, 0.2);
 }
 
 button:hover {
@@ -66,30 +84,47 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(48, 46, 46, 0.2);
 }
 
 #output-text {
     height: 100px;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     cursor: not-allowed;
 }
 
 footer {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 1px;
+    width: 30%;
     text-align: center;
     background-color: #333;
     padding: 10px 0;
     color: white;
     font-size: 14px;
     border-top: 1px solid #ccc;
+    border-radius: 23px;
 }
 
 footer p {
     margin: 0;
+    padding: 10px;
+    
+}
+
+
+#error-message {
+    color: red;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
 
 @media(max-width: 1200px){
 
 }
+
+
+

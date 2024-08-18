@@ -28,3 +28,18 @@ function copiarTexto() {
     document.execCommand("copy");
     alert("Texto copiado al portapapeles");
 }
+
+document.getElementById('input-text').addEventListener('input', function() {
+    var input = this.value;
+    var errorMessage = document.getElementById('error-message');
+
+    // Expresión regular para detectar mayúsculas y caracteres especiales
+    var regex = /[A-Z!@#$%^&*(),.?":{}|<>]/;
+
+    if (regex.test(input)) {
+        errorMessage.classList.remove('hidden');
+    } else {
+        errorMessage.classList.add('hidden');
+    }
+});
+
