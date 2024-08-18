@@ -1,3 +1,3 @@
 <h1>Encriptador</h1>
-![Descripción de la imagen](img/img/IMAGENE DEL ENCRIPTADOR.png)
+![Descripción de la imagen](img/IMAGENE DEL ENCRIPTADOR.png)
 
